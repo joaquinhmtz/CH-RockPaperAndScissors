@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./static/css/variables.css">
+  <link rel="stylesheet" href="./static/css/app.css">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+    <div class="container-game">
+        <div class="container-score">
+            <div class="title">
+                <img src="./static/img/logo.svg" alt="">
+            </div>
+            <div class="score">
+                <span>Score</span>
+                <span id="score">5</span>
+            </div>
+        </div>
+        <div class="container-controls" id="ruletGame">
+            <div class="controls">
+                
+                <div>
+                    <img src="./static/img/bg-triangle.svg" alt="">
+                </div>
+                <!-- <img src="./static/img/bg-triangle.svg" alt=""> -->
+                <div class="circle paper" id="btnPaper">
+                    <div class="container-image" id="btnPaper">
+                        <img src="./static/img/icon-paper.svg" alt="" id="btnPaper">
+                    </div>
+                </div>
+                <div class="circle scissors" id="btnScissors">
+                    <div class="container-image" id="btnScissors">
+                        <img src="./static/img/icon-scissors.svg" alt="" id="btnScissors">
+                    </div>
+                </div>
+                <div class="circle rock" id="btnRock">
+                    <div class="container-image" id="btnRock">
+                        <img src="./static/img/icon-rock.svg" alt="" id="btnRock">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-results" id="resultGame">
+            <div class="result-container">
+                <span>YOU PICKED</span>
+                <div class="circle-result" id="pimpYouResult">
+                    <div class="container-image">
+                        <img src="" alt="" id="imgYou">
+                    </div>
+                </div>
+            </div>
+            <div id="playAgain" class="result">
+                <div id="results" style="font-size: 3rem; color: white; text-align: center;"></div>
+                <button class="btnAgain" id="btnAgainId">
+                    PLAY AGAIN
+                </button>
+            </div>
+            <div class="result-container" id="resultHouse">
+                <span>THE HOUSE PICKED</span>
+                <div class="circle-result" id="pimpMachineResult">
+                    <div class="container-image">
+                        <img src="" alt="" id="imgMachine">
+                    </div>
+                </div>
+            </div>
+            <div class="result-container" id="emptyResult">
+                <span>THE HOUSE PICKED</span>
+                <div class="circle-result">
+                </div>
+            </div>
+        </div>
+        <div class="container-rules">
+            <button class="btn-rules" id="btnRules">Rules</button>
+        </div>
+    </div>
+
+    <div id="modalId" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>RULES</h3>
+                <img src="./static/img/icon-close.svg" id="closeId" alt="">
+            </div>
+            <div class="wrapper-modal">
+                <img src="./static/img/image-rules.svg" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="static/js/app.js"></script>
+    <script src="static/js/modal.js"></script>
+</body>
+</html>
